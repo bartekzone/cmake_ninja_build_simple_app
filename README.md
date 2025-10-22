@@ -31,18 +31,21 @@ Open your terminal (MSYS2 / cmd) and run commands: (If the commands return versi
 If no please run MSYS2 MINGW64 terminal and run:
    
    pacman -Syu
+   
    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
+   
    pacman -S mingw-w64-x86_64-make
 
 To install Ninja fast build tool please run:
 
-pacman -S mingw-w64-x86_64-ninja
+   pacman -S mingw-w64-x86_64-ninja
 
 ---
 
 ## 2. Clone the Project
 
 Download this repository from GitHub:
+
    git clone https://github.com/bartekzone/build_simple_app_cmake.git
 
 Please check project tree and analyze comments in CMakeLists.txt file
@@ -59,21 +62,29 @@ Please check project tree and analyze comments in CMakeLists.txt file
 ## 3. Configure and Build
 
 First, navigate to the project folder (the one containing CMakeLists.txt):
+
    cd <repo-name>
 
 Option A: Configure and Build with Ninja tool
-- cmake -G Ninja -S . -B build -DCMAKE_BUILD_TYPE=Release
-- cmake --build build
+
+   cmake -G Ninja -S . -B build -DCMAKE_BUILD_TYPE=Release
+   cmake --build build
 
 Explanation:
 cmake -G Ninja → select Ninja as the build generator
+
 -S . → source directory = current folder
+
 -B build → build output in the build/ folder
+
 -DCMAKE_BUILD_TYPE=Release → optimize for release (faster binary)
+
 cmake --build build → compile and link the program
 
-Option B: Configure and Build with MinGW Makefiles
+Option B: Configure and Build with MinGW Makefiles:
+
    cmake -G "MinGW Makefiles" -S . -B build -DCMAKE_BUILD_TYPE=Release
+
    cmake --build build
 
 Explanation:
@@ -84,10 +95,12 @@ The build will be executed using mingw32-make under the hood
 
 ## 4. Run the Program
 After successful compilation, the program will be located in the build/ folder. Type command:
+   
    ./build/main.exe
 
 ---
 
 ## 5. Clean the Build
 To remove all generated build files, simply delete the build/ folder:
+
    rm -rf build
