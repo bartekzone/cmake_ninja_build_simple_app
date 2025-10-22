@@ -1,4 +1,4 @@
-# Project: Cmake, Ninja and GCC - build simple C Application 
+# Project: Build simple C Application with CMake and GCC
 
 This project demonstrates how to build a simple C application using Ninja and CMake. 
 It is a minimal example for beginners.
@@ -24,15 +24,13 @@ Before you start, make sure you have installed:
 
 ### Check installed tools and versions
 Open your terminal (MSYS2 / cmd) and run. If the commands return version numbers, the tools are installed correctly
-- gcc --version
-- cmake --version
-- ninja --version
-
+   gcc --version
+   cmake --version
+   ninja --version
 If no please run MSYS2 MINGW64 terminal and run:
    pacman -Syu
    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
    pacman -S mingw-w64-x86_64-make
-
 To install Ninja fast build tool please run:
    pacman -S mingw-w64-x86_64-ninja
 
