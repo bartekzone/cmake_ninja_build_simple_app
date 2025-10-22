@@ -23,18 +23,18 @@ Before you start, make sure you have installed:
 - **Ninja** (optional but recommended) → fast build tool  
 
 ### Check installed tools and versions
-Open your terminal (MSYS2 / cmd) and run. If the commands return version numbers, the tools are installed correctly
+Open your terminal (MSYS2 / cmd) and run commands: (If the commands return version numbers, the tools are installed correctly)
 - gcc --version
 - cmake --version
 - ninja --version
 
 If no please run MSYS2 MINGW64 terminal and run:
-   pacman -Syu
-   pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
-   pacman -S mingw-w64-x86_64-make
+- pacman -Syu
+- pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
+- pacman -S mingw-w64-x86_64-make
 
 To install Ninja fast build tool please run:
-   pacman -S mingw-w64-x86_64-ninja
+- pacman -S mingw-w64-x86_64-ninja
 
 ---
 
