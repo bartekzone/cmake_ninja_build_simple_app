@@ -30,15 +30,15 @@ Open your terminal (MSYS2 / cmd) and run commands: (If the commands return versi
 
 If no please run MSYS2 MINGW64 terminal and run:
    
-   pacman -Syu
+  _ pacman -Syu
    
    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
    
-   pacman -S mingw-w64-x86_64-make
+   pacman -S mingw-w64-x86_64-make_
 
 To install Ninja fast build tool please run:
 
-   pacman -S mingw-w64-x86_64-ninja
+  _ pacman -S mingw-w64-x86_64-ninja_
 
 ---
 
@@ -46,7 +46,7 @@ To install Ninja fast build tool please run:
 
 Download this repository from GitHub:
 
-   git clone https://github.com/bartekzone/build_simple_app_cmake.git
+   _git clone https://github.com/bartekzone/build_simple_app_cmake.git_
 
 Please check project tree and analyze comments in CMakeLists.txt file
 <pre lang="markdown"> <code> ``` 
@@ -63,12 +63,12 @@ Please check project tree and analyze comments in CMakeLists.txt file
 
 First, navigate to the project folder (the one containing CMakeLists.txt):
 
-   cd <repo-name>
+   _cd <repo-name>_
 
 Option A: Configure and Build with Ninja tool
 
-   cmake -G Ninja -S . -B build -DCMAKE_BUILD_TYPE=Release
-   cmake --build build
+   _cmake -G Ninja -S . -B build -DCMAKE_BUILD_TYPE=Release
+   cmake --build build_
 
 Explanation:
 
@@ -84,9 +84,9 @@ cmake --build build → compile and link the program
 
 Option B: Configure and Build with MinGW Makefiles:
 
-   cmake -G "MinGW Makefiles" -S . -B build -DCMAKE_BUILD_TYPE=Release
+   _cmake -G "MinGW Makefiles" -S . -B build -DCMAKE_BUILD_TYPE=Release_
 
-   cmake --build build
+   _cmake --build build_
 
 Explanation:
 Same as above, but instead of Ninja, CMake generates a Makefile
