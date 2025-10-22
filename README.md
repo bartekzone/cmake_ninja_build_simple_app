@@ -71,6 +71,7 @@ Option A: Configure and Build with Ninja tool
    cmake --build build
 
 Explanation:
+
 cmake -G Ninja → select Ninja as the build generator
 
 -S . → source directory = current folder
@@ -96,11 +97,11 @@ The build will be executed using mingw32-make under the hood
 ## 4. Run the Program
 After successful compilation, the program will be located in the build/ folder. Type command:
    
-   ./build/main.exe
+   _./build/main.exe_
 
 ---
 
 ## 5. Clean the Build
 To remove all generated build files, simply delete the build/ folder:
 
-   rm -rf build
+ _  rm -rf build_
