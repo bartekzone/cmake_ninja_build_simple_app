@@ -61,9 +61,9 @@ Please check project tree and analyze comments in CMakeLists.txt file
 
 ## 3. Configure and Build
 
-First, navigate to the project folder (the one containing CMakeLists.txt):s
+First, navigate to the project folder (the one containing CMakeLists.txt):
 
-   _cd<repo-name>_
+   _cd reponame_
 
 **Option A**: Configure and Build with Ninja tool
 
