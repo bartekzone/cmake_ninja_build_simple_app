@@ -30,11 +30,11 @@ Open your terminal (MSYS2 / cmd) and run commands: (If the commands return versi
 
 If no please run MSYS2 MINGW64 terminal and run:
    
-  _ pacman -Syu
+   _pacman -Syu_
    
-   pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
+   _pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake_
    
-   pacman -S mingw-w64-x86_64-make_
+   _pacman -S mingw-w64-x86_64-make_
 
 To install Ninja fast build tool please run:
 
@@ -65,7 +65,7 @@ First, navigate to the project folder (the one containing CMakeLists.txt):
 
    _cd <repo-name>_
 
-Option A: Configure and Build with Ninja tool
+**Option A**: Configure and Build with Ninja tool
 
    _cmake -G Ninja -S . -B build -DCMAKE_BUILD_TYPE=Release
    cmake --build build_
@@ -82,7 +82,8 @@ cmake -G Ninja → select Ninja as the build generator
 
 cmake --build build → compile and link the program
 
-Option B: Configure and Build with MinGW Makefiles:
+
+**Option B**: Configure and Build with MinGW Makefiles:
 
    _cmake -G "MinGW Makefiles" -S . -B build -DCMAKE_BUILD_TYPE=Release_
 
