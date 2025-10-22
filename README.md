@@ -104,4 +104,4 @@ After successful compilation, the program will be located in the build/ folder. 
 ## 5. Clean the Build
 To remove all generated build files, simply delete the build/ folder:
 
- _  rm -rf build_
+    _rm -rf build_
