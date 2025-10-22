@@ -38,7 +38,7 @@ If no please run MSYS2 MINGW64 terminal and run:
 
 To install Ninja fast build tool please run:
 
-     _pacman -S mingw-w64-x86_64-ninja_
+   _pacman -S mingw-w64-x86_64-ninja_
 
 ---
 
