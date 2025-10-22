@@ -31,8 +31,8 @@ Open your terminal (MSYS2 / cmd) and run commands: (If the commands return versi
 If no please run MSYS2 MINGW64 terminal and run:
    
    pacman -Syu
-- pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
-- pacman -S mingw-w64-x86_64-make
+   pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake
+   pacman -S mingw-w64-x86_64-make
 
 To install Ninja fast build tool please run:
 
